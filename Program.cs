@@ -12,7 +12,8 @@ namespace HelloWorld
             {
                 Console.WriteLine("Choose option below");
                 Console.WriteLine("1. Add two numbers");
-                Console.WriteLine("2. Exit");
+                Console.WriteLine("2. Find Square");
+                Console.WriteLine("3. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -20,6 +21,9 @@ namespace HelloWorld
                         Addition.Add();
                         break;
                     case 2:
+                        PowerOfNumber.PowerFunction();
+                        break;
+                    case 3:
                         test = false;
                         Environment.Exit(0);
                         break;
