@@ -15,7 +15,8 @@ namespace HelloWorld
                 Console.WriteLine("2. Find Square");
                 Console.WriteLine("3. Test Leap year or not");
                 Console.WriteLine("4. Guess Number");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Play Tic-Tac-Toe Game");
+                Console.WriteLine("6. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,6 +33,9 @@ namespace HelloWorld
                         GuessTheNumber.GuessNumber();
                         break;
                     case 5:
+                        TicTacToeGame.playGame();
+                        break;
+                    case 6:
                         test = false;
                         Environment.Exit(0);
                         break;
