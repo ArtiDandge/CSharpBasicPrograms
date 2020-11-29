@@ -16,7 +16,8 @@ namespace HelloWorld
                 Console.WriteLine("3. Test Leap year or not");
                 Console.WriteLine("4. Guess Number");
                 Console.WriteLine("5. Play Tic-Tac-Toe Game");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("6. Merge Sort");
+                Console.WriteLine("7. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -36,6 +37,9 @@ namespace HelloWorld
                         TicTacToeGame.playGame();
                         break;
                     case 6:
+                        MergeSort.mergeMain();
+                        break;
+                    case 7:
                         test = false;
                         Environment.Exit(0);
                         break;
