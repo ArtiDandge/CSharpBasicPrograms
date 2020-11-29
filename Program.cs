@@ -14,7 +14,8 @@ namespace HelloWorld
                 Console.WriteLine("1. Add two numbers");
                 Console.WriteLine("2. Find Square");
                 Console.WriteLine("3. Test Leap year or not");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("4. Guess Number");
+                Console.WriteLine("5. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -28,6 +29,9 @@ namespace HelloWorld
                         LeapYearCheck.LeapYear();
                         break;
                     case 4:
+                        GuessTheNumber.GuessNumber();
+                        break;
+                    case 5:
                         test = false;
                         Environment.Exit(0);
                         break;
