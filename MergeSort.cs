@@ -8,7 +8,7 @@ namespace HelloWorld
     {
         public static void MergeMethod(int[] numbers, int left, int mid, int right)
         {
-            int[] temp = new int[25];
+            int[] temp = new int[7];
             int i, left_end, num_elements, tmp_pos;
             left_end = (mid - 1);
             tmp_pos = left;
